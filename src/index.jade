@@ -1,0 +1,83 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title My Awesome Site
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="stylesheets/main.css")
+    script(src="scripts/app.js")
+  
+  body
+
+    header
+      h1.main-title Litvinenko Evgeny
+        br
+        span Web Development
+
+      nav.main-nav 
+        ul
+          li.bg-orange: a(href='#') home
+          li.bg-purple: a(href='#') about
+          li.bg-yellow: a(href='#') services
+          li.bg-green: a(href='#') blog
+          li.bg-blue: a(href='#') contact
+    
+    section.main-content
+
+      div.feature-slider
+        a(href='#').nav-left
+        a(href='#').nav-right
+
+        ul.slider-nav
+          li.active: a(href='#')
+          li: a(href='#')
+          li: a(href='#')
+          li: a(href='#')
+        
+        div.slide 
+          div.slide-text
+            h2 Web Design Services
+            p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+            a.btn.bg-orange(href='#') Click here to learn more
+          img.slide-image(alt='Web Design Services' src='images/portfolio.jpg')
+
+      section.feature-services
+        div.column-half.bg-green
+          img(alt='Web and Graphic Design' src='images/monitor.png')
+          h2: a(href='#') Web &amp; Graphic Desig 
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.n
+          //- p: a(href='#') Read more &gt;&gt;
+
+        div.column-half.bg-dark-green
+          img(alt='Video Production' src='images/camera.png')
+          h2: a(href='#') Video Production
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.n
+          //- p: a(href='#') Read more &gt;&gt;
+
+      footer 
+        div.column-one-third
+          h2 From the Blog
+          ul.blog-list
+            li: a(href='#') Flat Design - Here to Stay
+            li: a(href='#') Determining Your Audience
+            li: a(href='#') Han Shot First
+
+        div.column-one-third
+          h2.connect Connect with Me
+          ul.social-list
+            li: a(href='#'): img(src='images/facebook.gif')
+            li: a(href='#'): img(src='images/twitter.gif')
+            li: a(href='#'): img(src='images/google-plus.gif')
+            li: a(href='#'): img(src='images/youtube.gif')
+
+        div.column-one-third.column-registration
+          div.registration
+            h2 Register for Updates
+            form(method='post' action='')
+              input#txtName(type='text' placeholder='name')
+              input#txtEmail(type='email' placeholder='email@example.org')
+              button#btn-register.btn Sign Me Up
+
+
